@@ -17,10 +17,13 @@
 %http://karlwiegers.com
 \documentclass{scrreprt}
 \usepackage{listings}
+%\usepackage[latin1]{inputenc}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
-\usepackage[utf8]{inputenc}       
-\usepackage[english]{babel}
+\usepackage[utf8]{inputenc} 
+%\usepackage[T1]{fontenc}      
+\usepackage[francais]{babel}
+\usepackage{textcomp}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -66,6 +69,7 @@
     \end{bfseries}
 \end{flushright}
 
+\renewcommand{\contentsname}{Contenu}
 \tableofcontents
 
 
@@ -85,20 +89,20 @@
 
 \chapter{Introduction}
 
-\section{Purpose}
+\section{A propos de ce document}
 $<$Identify the product whose software requirements are specified in this 
 document, including the revision or release number. Describe the scope of the 
 product that is covered by this SRS, particularly if this SRS describes only 
 part of the system or a single subsystem.$>$
 
-\section{Document Conventions}
+\section{Portée du document}
 $<$Describe any standards or typographical conventions that were followed when 
 writing this SRS, such as fonts or highlighting that have special significance.  
 For example, state whether priorities  for higher-level requirements are assumed 
 to be inherited by detailed requirements, or whether every requirement statement 
 is to have its own priority.$>$
 
-\section{Intended Audience and Reading Suggestions}
+\section{Public concerné et vue d'ensemble du document }
 $<$Describe the different types of reader that the document is intended for, 
 such as developers, project managers, marketing staff, users, testers, and 
 documentation writers. Describe what the rest of this SRS contains and how it is 
@@ -106,13 +110,20 @@ organized. Suggest a sequence for reading the document, beginning with the
 overview sections and proceeding through the sections that are most pertinent to 
 each reader type.$>$
 
-\section{Project Scope}
+\section{Définitions, acronymes et abréviations}
 $<$Provide a short description of the software being specified and its purpose, 
 including relevant benefits, objectives, and goals. Relate the software to 
 corporate goals or business strategies. If a separate vision and scope document 
 is available, refer to it rather than duplicating its contents here.$>$
 
-\section{References}
+\section{Conventions de rédaction du document}
+$<$List any other documents or Web addresses to which this SRS refers. These may 
+include user interface style guides, contracts, standards, system requirements 
+specifications, use case documents, or a vision and scope document. Provide 
+enough information so that the reader could access a copy of each reference, 
+including title, author, version number, date, and source or location.$>$
+
+\section{Références et remerciements}
 $<$List any other documents or Web addresses to which this SRS refers. These may 
 include user interface style guides, contracts, standards, system requirements 
 specifications, use case documents, or a vision and scope document. Provide 
@@ -122,7 +133,7 @@ including title, author, version number, date, and source or location.$>$
 
 \chapter{Overall Description}
 
-\section{Product Perspective}
+\section{Prct Perspective}
 $<$Describe the context and origin of the product being specified in this SRS.  
 For example, state whether this product is a follow-on member of a product 
 family, a replacement for certain existing systems, or a new, self-contained 
@@ -161,7 +172,7 @@ limitations (timing requirements, memory requirements); interfaces to other
 applications; specific technologies, tools, and databases to be used; parallel 
 operations; language requirements; communications protocols; security 
 considerations; design conventions or programming standards (for example, if the 
-customer’s organization will be responsible for maintaining the delivered 
+customerâs organization will be responsible for maintaining the delivered 
 software).$>$
 
 \section{User Documentation}
@@ -228,7 +239,7 @@ object class, functional hierarchy, or combinations of these, whatever makes the
 most logical sense for your product.$>$
 
 \section{System Feature 1}
-$<$Don’t really say “System Feature 1.” State the feature name in just a few 
+$<$Donât really say âSystem Feature 1.â State the feature name in just a few 
 words.$>$
 
 \subsection{Description and Priority}
@@ -248,7 +259,7 @@ These are the software capabilities that must be present in order for the user
 to carry out the services provided by the feature, or to execute the use case.  
 Include how the product should respond to anticipated error conditions or 
 invalid inputs. Requirements should be concise, complete, unambiguous, 
-verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary 
+verifiable, and necessary. Use âTBDâ as a placeholder to indicate when necessary 
 information is not yet available.$>$
 
 $<$Each requirement should be uniquely identified with a sequence number or a 
@@ -274,7 +285,7 @@ $<$Specify those requirements that are concerned with possible loss, damage, or
 harm that could result from the use of the product. Define any safeguards or 
 actions that must be taken, as well as actions that must be prevented. Refer to 
 any external policies or regulations that state safety issues that affect the 
-product’s design or use. Define any safety certifications that must be 
+productâs design or use. Define any safety certifications that must be 
 satisfied.$>$
 
 \section{Security Requirements}
@@ -321,5 +332,7 @@ diagrams.$>$
 \section{Appendix C: To Be Determined List}
 $<$Collect a numbered list of the TBD (to be determined) references that remain 
 in the SRS so they can be tracked to closure.$>$
+
+
 
 \end{document}
