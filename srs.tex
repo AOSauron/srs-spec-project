@@ -18,13 +18,12 @@
 \documentclass{scrreprt}
 \usepackage{array}
 \usepackage{listings}
-%\usepackage[latin1]{inputenc}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8]{inputenc} 
-%\usepackage[T1]{fontenc}      
 \usepackage[english]{babel}
 \usepackage{textcomp}
+\usepackage{graphicx} %utilisation d'images
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -223,6 +222,22 @@ Identify data that will be shared across software components. If the data
 sharing mechanism must be implemented in a specific way (for example, use of a 
 global data area in a multitasking operating system), specify this as an 
 implementation constraint.$>$
+\subsection{Diagrammes de séquence des cas d'utilisation}
+%AUTENTIFICATION :
+\begin{center}
+	\includegraphics[scale=0.55]{image/authentification.png}
+\end{center}
+%\begin{center}
+%	\textbf{Figure 3.3.1.} S'autentifier
+%\end{center}
+\hspace{1cm}Les utilisateurs de l'application doivent s'y authentifier à son ouverture. Ils utilisent pour cela leurs identifiants de l'Université de Lorraine.
+
+%ACCES AU LIVRET DE L'ELEVE :
+\begin{center}
+	\includegraphics[scale=0.55]{image/accesLivretEleve.png}
+\end{center}
+\hspace{1cm}Les étudiants doivent pouvoir télécharger le livret de l'élève depuis l'application ; pour ce faire, ils doivent d'abord se connecter au service.
+
 
 
 
