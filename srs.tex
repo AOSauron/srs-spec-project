@@ -385,19 +385,40 @@ associated with use cases.$>$
 	\textbf{Figure 5.1.1.} Diagramme entités-associations
 \end{center}
 
-
+\vspace {4cm}
 \begin{center}
-\textbf
-Etudiants
-\end{center}
-\begin{tabular}{|l|c|r|}
+\textbf 
+{Étudiants}
+\vspace {0,5cm}
+
+\begin{tabular}{|c|c|c|c|}
   \hline
- \textbf
- Champ  & Type & Description \\
+ \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
   \hline
-  1.1 & 1.2 & 1.3 \\
-  2.1 & 2.2 & 2.3 \\
+  id_etudiant & varchar2 & identifiant de l'étudiant UL & clé primaire\\
+  \hline
+  nom & varchar2 & nom de l'élève &  \\
+  \hline
+  prénom & varchar2 & prénom(s) de l'étudiant &  \\
+  \hline
+  sexe & varchar2 & sexe de l'étudiant &  \\
+  \hline
+  date_naissance & date & date de naissance de l'étudiant &  \\
+  \hline
+  ine & int & numéro INE de l'étudiant & clé primaire \\
+  \hline
+  annee_etude & varchar2 & l'année en cours de l'élève (1A, 2A, 3A) &  \\
+  \hline
+  adresse_mail & varchar2 & adresse mail de l'étudiant & clé primaire\\
+  \hline
+  telephone & varchar2 & numéro de téléphone de l'étudiant &  \\
+  \hline
+  groupe & int & groupe de l'étudiant &  \\
+  \hline
+  mot_de_passe & varchar2 & mot de passe de l'étudiant &  \\
   \hline
 \end{tabular}
+
+\end{center}
 
 \end{document}
