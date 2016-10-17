@@ -393,7 +393,7 @@ associated with use cases.$>$
 
 \begin{tabular}{|c|c|c|c|}
   \hline
- \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
+  \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
   \hline
   id_etudiant & varchar2 & identifiant de l'étudiant UL & clé primaire\\
   \hline
@@ -416,6 +416,33 @@ associated with use cases.$>$
   groupe & int & groupe de l'étudiant &  \\
   \hline
   mot_de_passe & varchar2 & mot de passe de l'étudiant &  \\
+  \hline
+\end{tabular}
+
+\vspace {1cm}
+\textbf 
+{Soutenances}
+\vspace {0,5cm}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
+  \hline
+  id_soutenance & int & id de la soutenance & clé primaire\\
+  \hline
+  id_etudiant & varchar2 & identifiant de l'étudiant UL & clé primaire\\
+  \hline
+  id_professeur & varchar2 & id dus professeur assistant à la soutenance &  \\
+  \hline
+  id_professeur_referent & varchar2 & identifiant du professeur référent &  \\
+  \hline
+  date & date & date de soutenance &  \\
+  \hline
+  heure_debut & time & heure de début de soutenance &  \\
+  \hline
+  heure_fin & time & heure de fin de soutenance &  \\
+  \hline
+  salle_soutenance & varchar2 & salle accueillant la soutenance &  \\
   \hline
 \end{tabular}
 
