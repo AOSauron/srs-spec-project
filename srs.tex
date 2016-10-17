@@ -432,7 +432,7 @@ associated with use cases.$>$
   \hline
   id_etudiant & varchar2 & identifiant de l'étudiant UL & clé primaire\\
   \hline
-  id_professeur & varchar2 & id dus professeur assistant à la soutenance &  \\
+  id_professeur & varchar2 & id du professeur assistant à la soutenance &  \\
   \hline
   id_professeur_referent & varchar2 & identifiant du professeur référent &  \\
   \hline
@@ -443,6 +443,31 @@ associated with use cases.$>$
   heure_fin & time & heure de fin de soutenance &  \\
   \hline
   salle_soutenance & varchar2 & salle accueillant la soutenance &  \\
+  \hline
+\end{tabular}
+
+\vspace {1cm}
+\textbf 
+{Service Informatique}
+\vspace {0,5cm}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
+  \hline
+  id_informaticien & varchar2 & identifiant de l'informaticien UL & clé primaire\\
+  \hline
+  nom & varchar2 & nom de l'informaticien & \\
+  \hline
+  prenom & varchar2 & prénom de l'informaticien &  \\
+  \hline
+  sexe & varchar2 & sexe de l'informaticien &  \\
+  \hline
+  adresse_mail & varchar2 & adresse mail de l'informaticien & clé primaire  \\
+  \hline
+  mot_de_passe & varchar2 & mot de passe de l'informaticien &  \\
+  \hline
+  telephone & varchar2 & numéro de téléphone du service informatique &  \\
   \hline
 \end{tabular}
 
