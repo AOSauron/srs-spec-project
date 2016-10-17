@@ -24,6 +24,7 @@
 \usepackage[english]{babel}
 \usepackage{textcomp}
 \usepackage{graphicx} %utilisation d'images
+\usepackage{enumitem}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -90,31 +91,37 @@
 \chapter{INTRODUCTION}
 
 \section{A propos de ce document}
-$<$Identify the product whose software requirements are specified in this 
-document, including the revision or release number. Describe the scope of the 
-product that is covered by this SRS, particularly if this SRS describes only 
-part of the system or a single subsystem.$>$
+\hspace{1cm}Ce document a pour objectif de présenter l'application de gestion des stages de Télécom Nancy, d'en donner les acteurs et les fonctionnalités ainsi que les contraintes qui y sont assiciées. Il présente par ailleurs aussi l'interface graphique de l'application.
 
 \section{Portée du document}
-$<$Describe any standards or typographical conventions that were followed when 
-writing this SRS, such as fonts or highlighting that have special significance.  
-For example, state whether priorities  for higher-level requirements are assumed 
-to be inherited by detailed requirements, or whether every requirement statement 
-is to have its own priority.$>$
+\hspace{1cm}L'application présentée ici a pour objectif de facilité la gestion des stages des étudiants de Télécom Nancy.\\
+
+\hspace{0.7cm}Du point de vue administratif, elle facilite la gestion des stages en permettant la création de bases de données évitant la recopie manuelle d'informations. Les conventions de stage sont notamment générée automatiquement.\\
+
+\hspace{0.7cm}Par le biais de cette application, les étudiants ont la possibilités de saisir directement les informations relatives à leur stage, d'obtenir les informations dont ils peuvent avoir besoin (par exemple avec le livret de l'élève) et de rendre leur rapport de stage en ligne.\\
+
+\hspace{0.7cm}Finalement, l'application permet aux professeurs référents de communiquer avec les étudiants, de récupérer les rapports à corriger et de valider ou non les stages de élèves.
 
 \section{Public concerné et vue d'ensemble du document }
-$<$Describe the different types of reader that the document is intended for, 
-such as developers, project managers, marketing staff, users, testers, and 
-documentation writers. Describe what the rest of this SRS contains and how it is 
-organized. Suggest a sequence for reading the document, beginning with the 
-overview sections and proceeding through the sections that are most pertinent to 
-each reader type.$>$
+
+\hspace{1cm}Ce cahier des charges visent avant tout les instigateurs et responsables du projet ainsi que les développeurs. Par extension, il peut aussi être utile pour les futurs utilisateurs de l'application, c'est-à-dire les étudiants, les professeurs et l'administration de Télécom Nancy.\\
+
+\hspace{0.7cm}La première partie de ce document introduit les objectifs principaux de l'applications ainsi que les personnes visées. Elle se charge aussi de définir les conventions de rédaction du cahier de charge.\\
+
+\hspace{0.7cm}La deuxième partie se concentre sur une decription plus détaillée des fonctionnalités attendues et de l'environnement d'évolution de l'application, notamment son adaptabilité aux utilisateurs.\\
+
+\hspace{0.7cm}La troisième partie présente l'interface utilisateur ainsi que les différentes contraintes auquelles le logiciel doit se plier.\\
+
+\hspace{0.7cm}La quatrième partie présente les besoins non fonctionnels non présentés précédemment.\\
+
+\hspace{0.7cm}Finalement, les annexes présentent le dictionnaire des données et le diagramme entités-associations.
 
 \section{Définitions, acronymes et abréviations}
-$<$Provide a short description of the software being specified and its purpose, 
-including relevant benefits, objectives, and goals. Relate the software to 
-corporate goals or business strategies. If a separate vision and scope document 
-is available, refer to it rather than duplicating its contents here.$>$
+\hspace{1cm}Voici une liste des différentes abréviations utlisées dans ce document :
+\begin{description}
+\item[CAS :] Central Authentification Service service d'authentification de l'UL
+\item[UL :] Université de Lorraine
+\end{description}
 
 \section{Conventions de rédaction du document}
 $<$List any other documents or Web addresses to which this SRS refers. These may 
