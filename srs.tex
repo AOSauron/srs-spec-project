@@ -25,6 +25,8 @@
 \usepackage{textcomp}
 \usepackage{graphicx} %utilisation d'images
 \usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{times}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -98,7 +100,7 @@
 
 \hspace{0.7cm}Du point de vue administratif, elle facilite la gestion des stages en permettant la création de bases de données évitant la recopie manuelle d'informations. Les conventions de stage sont notamment générée automatiquement.\\
 
-\hspace{0.7cm}Par le biais de cette application, les étudiants ont la possibilités de saisir directement les informations relatives à leur stage, d'obtenir les informations dont ils peuvent avoir besoin (par exemple avec le livret de l'élève) et de rendre leur rapport de stage en ligne.\\
+\hspace{0.7cm}Par le biais de cette application, les étudiants ont la possibilité de saisir directement les informations relatives à leur stage, d'obtenir les informations dont ils peuvent avoir besoin (par exemple avec le livret de l'élève) et de rendre leur rapport de stage en ligne.\\
 
 \hspace{0.7cm}Finalement, l'application permet aux professeurs référents de communiquer avec les étudiants, de récupérer les rapports à corriger et de valider ou non les stages de élèves.
 
@@ -108,19 +110,24 @@
 
 \hspace{0.7cm}La première partie de ce document introduit les objectifs principaux de l'applications ainsi que les personnes visées. Elle se charge aussi de définir les conventions de rédaction du cahier de charge.\\
 
-\hspace{0.7cm}La deuxième partie se concentre sur une decription plus détaillée des fonctionnalités attendues et de l'environnement d'évolution de l'application, notamment son adaptabilité aux utilisateurs.\\
+\hspace{0.7cm}La deuxième partie se concentre sur une description plus détaillée des fonctionnalités attendues et de l'environnement d'évolution de l'application, notamment son adaptabilité aux utilisateurs.\\
 
-\hspace{0.7cm}La troisième partie présente l'interface utilisateur ainsi que les différentes contraintes auquelles le logiciel doit se plier.\\
+\hspace{0.7cm}La troisième partie présente l'interface utilisateur ainsi que les différentes contraintes auxquelles le logiciel doit se plier.\\
 
 \hspace{0.7cm}La quatrième partie présente les besoins non fonctionnels non présentés précédemment.\\
 
 \hspace{0.7cm}Finalement, les annexes présentent le dictionnaire des données et le diagramme entités-associations.
 
 \section{Définitions, acronymes et abréviations}
-\hspace{1cm}Voici une liste des différentes abréviations utlisées dans ce document :
+\hspace{1cm}Voici une liste des différentes abréviations utilisées dans ce document :
 \begin{description}
 \item[CAS :] Central Authentification Service service d'authentification de l'UL
 \item[UL :] Université de Lorraine
+\item[SMTP :] Simple Mail Transfer Protocol , protocole qui permet de recevoir des messages électroniques d'une boite mail existante( idpersonne@telecomnancy.eu)
+\item[IMAP :] Internet Message Access Protocol, protocole qui permet d'envoyer un message électronique sans passer par sa boite mail directement.
+%\item[HTTPS :]​ Hypertext Transfer Protocol Secure, protocole sécurisé qui permet l'échange entre client et serveur
+
+
 \end{description}
 
 \section{Conventions de rédaction du document}
@@ -131,11 +138,19 @@ enough information so that the reader could access a copy of each reference,
 including title, author, version number, date, and source or location.$>$
 
 \section{Références et remerciements}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+Afin de pouvoir réaliser nos schémas, nous avons utilisé le logiciel$:$ \\
+ -balsamiq (création des interfaces étudiant/secrétaire) \\
+
+Notre site internet fait réference :\\
+
+-au CAS de l'Université de Lorraine pour la connection unique et sécurisé de chacun\\
+-à la boite mail de Telecom Nancy ( https://webmail.telecomnancy.eu) pour pouvoir échanger directement depuis le site internet.\\
+	
+	
+		et les sites internet $:$\\
+
+-plantuml.com (diagram pattern)\\
+-l'application de Mouchid (Diagrammes UML)\\
 
 
 \chapter{DESCRIPTION GLOBALE }
