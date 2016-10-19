@@ -63,7 +63,7 @@
         Prepared by \\ 
         \vspace{1.0cm}
         \begin{flushleft}
-        Alexandre Chichmanian \\ Gauthier Zambaux \\ Mouchid Waidi \\ Guillaume Garcia\\
+        Alexandre CHICHMANIAN \\ Gauthier ZAMBAUX \\ Mouchid WAIDI \\ Guillaume GARCIA\\
         \end{flushleft}
         \vspace{1.0cm}
         Los Pollos\\
@@ -93,7 +93,7 @@
 \chapter{INTRODUCTION}
 
 \section{A propos de ce document}
-\hspace{1cm}Ce document a pour objectif de présenter l'application de gestion des stages de Télécom Nancy, d'en donner les acteurs et les fonctionnalités ainsi que les contraintes qui y sont assiciées. Il présente par ailleurs aussi l'interface graphique de l'application.
+\hspace{1cm}Ce document a pour objectif de présenter l'application de gestion des stages de Télécom Nancy, d'en donner les acteurs et les fonctionnalités ainsi que les contraintes qui y sont associées. Il présente par ailleurs aussi l'interface graphique de l'application.
 
 \section{Portée du document}
 \hspace{1cm}L'application présentée ici a pour objectif de facilité la gestion des stages des étudiants de Télécom Nancy.\\
@@ -131,11 +131,10 @@
 \end{description}
 
 \section{Conventions de rédaction du document}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+
+L'intégralité de ce document a été écrit avec la police Times New Roman.
+
+Lorsqu'une personne est citée, son nom est écrit en majuscule, et son prénom, seule la première lettre est en majuscule.
 
 \section{Références et remerciements}
 Afin de pouvoir réaliser nos schémas, nous avons utilisé le logiciel$:$ \\
@@ -156,31 +155,39 @@ Notre site internet fait réference :\\
 \chapter{DESCRIPTION GLOBALE }
 
 \section{Perspective du produit}
-$<$Describe the context and origin of the product being specified in this SRS.  
-For example, state whether this product is a follow-on member of a product 
-family, a replacement for certain existing systems, or a new, self-contained 
-product. If the SRS defines a component of a larger system, relate the 
-requirements of the larger system to the functionality of this software and 
-identify interfaces between the two. A simple diagram that shows the major 
-components of the overall system, subsystem interconnections, and external 
-interfaces can be helpful.$>$
+
+Le site web Gestionnaire de Stages Telecom Nancy a pour but de faciliter le suivi de stage des étudiants de Telecom Nancy. Elle permet dans un premier temps de créer de façon automatique, la fiche  de récapitulatif de stage, et la convention de stage. Pour cela, le site web sera optimisé à la fois pour ordinateur, que pour smartphone ou tablette et permettra des échanges entre les élèves, la secrétaire des stages et les professeurs. L'école, étant rattaché désormais à l'Université de Lorraine, la connection sur la plate-forme se fera grâce au système d'authentification CAS.
 
 \section{Fonctionnalités du produit}
-$<$Summarize the major functions the product must perform or must let the user 
-perform. Details will be provided in Section 3, so only a high level summary 
-(such as a bullet list) is needed here. Organize the functions to make them 
-understandable to any reader of the SRS. A picture of the major groups of 
-related requirements and how they relate, such as a top level data flow diagram 
-or object class diagram, is often effective.$>$
+L'application web va permettre aux étudiants de :
+\begin{itemize}[label=\textbullet]
+	\item Création automatique des fiches de renseignement des stages en fonction des donnée entrées par l'étudiant
+	\item Créer automatique de la convention de stage
+	\item Communiquer entre élèves et professeurs
+	\item Récupérer le livret de stages
+	\item Récupérer la fiche d'évaluation
+	\item	Récupérer des templates mémoire ingénieur
+	\item Envoyer sur le serveur la fiche d'évaluation remplie
+	\item Envoyer le rapport de stage/mémoire ingénieur sur le serveur
+	\item Consultater des offres de stages disponibles
+	\item Consultater de la date de soutenance son horaire et sa salle
+\end{itemize}
+L'application web va permettre à la secrétaire des stages de :
+\begin{itemize}[label=\textbullet]
+	\item Déposer le livret des stages sur la plateforme
+	\item Déposer la fiche d'évaluation vierge
+	\item Récupérer les fiches récapitulatif de stage
+	\item Récupérer les conventions de stages signées
+	\item Récupérer les rapports de stage/mémoire ingénieur
+	\item Mettre en ligne les offres de stages
+	\item Entrer les dates de soutenance avec l'horaire et la salle
+	\item Modifier le statut des élèves ( 1A / 2A / 3A)
+	
+\end{itemize}
+	
 
 \section{Utilisateurs}
-$<$Identify the various user classes that you anticipate will use this product.  
-User classes may be differentiated based on frequency of use, subset of product 
-functions used, technical expertise, security or privilege levels, educational 
-level, or experience. Describe the pertinent characteristics of each user class.  
-Certain requirements may pertain only to certain user classes. Distinguish the 
-most important user classes for this product from those who are less important 
-to satisfy.$>$
+Ce site internet sera avant tout utilisé par les étudiants afin de pouvoir préparer leur stage du début de leurs recherche jusqu'à la date de soutenance. Il sera aussi utilisé par la secrétaire des stages qui sera là pour mener à bien la préparation des stages des étudiants. Il sera aussi utilisé par les professeurs afin de connaitre à quels soutenances ils devront être présent, mais ce site sera aussi utilisé par les référents de stages afin de mener à bien la préparation des élèves, et de communiquer avec eux si nécessaire. Dans tous les cas, tout utilisateur va devoir se connecter sur la plateforme grâce au CAS de l'université de Lorraine.
 
 \section{Environnement d'exécution}
 $<$Describe the environment in which the software will operate, including the 
