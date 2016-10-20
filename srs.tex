@@ -263,11 +263,61 @@ example, in the vision and scope document or the project plan).$>$
 \end{center}
 
 \section{Besoins fonctionnels}
-$<$Describe the logical and physical characteristics of each interface between 
-the software product and the hardware components of the system. This may include 
-the supported device types, the nature of the data and control interactions 
-between the software and the hardware, and communication protocols to be 
-used.$>$
+
+Voici les besoins fonctionnels liés aux \textbf{Étudiants} :
+\begin{center}
+\vspace {0.5cm}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  En tant qu'étudiant, je dois m'authentifier avec mes identifiants UL pour accéder à mon espace. & L'authentification UL via le CAS est nécessaire pour accéder aux fonctionnalités de l'application. & Haute\\
+  \hline
+  En tant qu'étudiant, je peux déposer mon rapport de stage. & Le dépôt du rapport doit être effectué avant une date buttoir. & Haute\\ 
+  \hline
+  En tant qu'étudiant, je peux saisir les informations relatives au stage composant la convention et la fiche de renseignements. & L'application permet l’édition en ligne de la convention de stage et de la fiche de renseignements propre à l'étudiant. & Moyenne\\
+  \hline
+  En tant qu'étudiant, je peux consulter les dates de soutenance qui me sont affectées. & L'application conserve et met à disposition toutes les dates de soutenances liées à l'étudiant & Moyenne\\
+  \hline
+  En tant qu'étudiant, je peux échanger avec mon encadrant de stage des informations concernant le stage. & L'application permet d'échanger des mails via le protocole STMP. & Basse\\
+  \hline
+  En tant qu'étudiant, je peux accéder à des offres de stages. & Ces offres seront listées dans un PDF. & Basse\\
+  \hline
+  En tant qu'étudiant, je peux accéder au livret de l'élève. & L'application conserve et met à disposition la dernière version du livret de l'élève. & Basse\\
+  \hline
+  En tant qu'étudiant, je peux télécharger la fiche d'évaluation, et la déposer une fois remplie. & L'application conserve et met à disposition la fiche d'évaluation. Le dépôt de cette dernière doit être effectué avant une date buttoir. & Basse\\
+  \hline  
+  En tant qu'étudiant, je peux accéder au template de mémoire d'ingénieur. & L'application conserve et met à disposition un template de mémoire d'ingénieur. & Basse\\
+  \hline
+\end{tabular}
+\end{center}
+\vspace{1cm}
+Voici les besoins fonctionnels liés au \textbf{Service informatique} :
+\begin{center}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  En tant que membre du service informatique de l'école, je peux accéder et modifier tous les paramètres de l'application. & Le membre du service informatique peut accéder au code source de l'application et à son hébergeur pour d'éventuelles maintenances.  & Haute\\
+  \hline
+  En tant que membre du service informatique de l'école, je peux répondre aux requêtes (d'aide ou autres) des autres utilisateurs. & Les utilisateurs peuvent échanger des mails grâce au protocole STMP fourni par l'application. & Basse\\ 
+  \hline
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+Voici les besoins fonctionnels liés à la \textbf{Secrétaire des stages} :
+\begin{center}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  En tant que membre du service informatique de l'école, je peux accéder et modifier tous les paramètres de l'application. & Le membre du service informatique peut accéder au code source de l'application et à son hébergeur pour d'éventuelles maintenances.  & Haute\\
+  \hline
+  En tant que membre du service informatique de l'école, je peux répondre aux requêtes (d'aide ou autres) des autres utilisateurs. & Les utilisateurs peuvent échanger des mails grâce au protocole STMP fourni par l'application. & Haute\\ 
+  \hline
+\end{tabular}
+\end{center}
 
 \section{Besoins comportementaux}
 $<$Describe the connections between this product and other specific software 
@@ -421,7 +471,7 @@ associated with use cases.$>$
 \vspace {4cm}
 \begin{center}
 \textbf 
-{Étudiants}
+{Étudiant}
 \vspace {0,5cm}
 
 \begin{tabular}{|c|c|c|c|}
@@ -454,7 +504,7 @@ associated with use cases.$>$
 
 \vspace {1cm}
 \textbf 
-{Soutenances}
+{Soutenance}
 \vspace {0,5cm}
 
 \begin{tabular}{|c|c|c|c|}
