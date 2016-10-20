@@ -98,25 +98,25 @@
 \section{Portée du document}
 \hspace{1cm}L'application présentée ici a pour objectif de facilité la gestion des stages des étudiants de Télécom Nancy.\\
 
-\hspace{0.7cm}Du point de vue administratif, elle facilite la gestion des stages en permettant la création de bases de données évitant la recopie manuelle d'informations. Les conventions de stage sont notamment générée automatiquement.\\
+\hspace{0.6cm}Du point de vue administratif, elle facilite la gestion des stages en permettant la création de bases de données évitant la recopie manuelle d'informations. Les conventions de stage sont notamment générée automatiquement.\\
 
-\hspace{0.7cm}Par le biais de cette application, les étudiants ont la possibilité de saisir directement les informations relatives à leur stage, d'obtenir les informations dont ils peuvent avoir besoin (par exemple avec le livret de l'élève) et de rendre leur rapport de stage en ligne.\\
+\hspace{0.6cm}Par le biais de cette application, les étudiants ont la possibilité de saisir directement les informations relatives à leur stage, d'obtenir les informations dont ils peuvent avoir besoin (par exemple avec le livret de l'élève) et de rendre leur rapport de stage en ligne.\\
 
-\hspace{0.7cm}Finalement, l'application permet aux professeurs référents de communiquer avec les étudiants, de récupérer les rapports à corriger et de valider ou non les stages de élèves.
+\hspace{0.6cm}Finalement, l'application permet aux professeurs référents de communiquer avec les étudiants, de récupérer les rapports à corriger et de valider ou non les stages de élèves.
 
 \section{Public concerné et vue d'ensemble du document }
 
 \hspace{1cm}Ce cahier des charges visent avant tout les instigateurs et responsables du projet ainsi que les développeurs. Par extension, il peut aussi être utile pour les futurs utilisateurs de l'application, c'est-à-dire les étudiants, les professeurs et l'administration de Télécom Nancy.\\
 
-\hspace{0.7cm}La première partie de ce document introduit les objectifs principaux de l'applications ainsi que les personnes visées. Elle se charge aussi de définir les conventions de rédaction du cahier de charge.\\
+\hspace{0.6cm}La première partie de ce document introduit les objectifs principaux de l'applications ainsi que les personnes visées. Elle se charge aussi de définir les conventions de rédaction du cahier de charge.\\
 
-\hspace{0.7cm}La deuxième partie se concentre sur une description plus détaillée des fonctionnalités attendues et de l'environnement d'évolution de l'application, notamment son adaptabilité aux utilisateurs.\\
+\hspace{0.6cm}La deuxième partie se concentre sur une description plus détaillée des fonctionnalités attendues et de l'environnement d'évolution de l'application, notamment son adaptabilité aux utilisateurs.\\
 
-\hspace{0.7cm}La troisième partie présente l'interface utilisateur ainsi que les différentes contraintes auxquelles le logiciel doit se plier.\\
+\hspace{0.6cm}La troisième partie présente l'interface utilisateur ainsi que les différentes contraintes auxquelles le logiciel doit se plier.\\
 
-\hspace{0.7cm}La quatrième partie présente les besoins non fonctionnels non présentés précédemment.\\
+\hspace{0.6cm}La quatrième partie présente les besoins non fonctionnels non présentés précédemment.\\
 
-\hspace{0.7cm}Finalement, les annexes présentent le dictionnaire des données et le diagramme entités-associations.
+\hspace{0.6cm}Finalement, les annexes présentent le dictionnaire des données et le diagramme entités-associations.
 
 \section{Définitions, acronymes et abréviations}
 \hspace{1cm}Voici une liste des différentes abréviations utilisées dans ce document :
@@ -132,46 +132,51 @@
 
 \section{Conventions de rédaction du document}
 
-L'intégralité de ce document a été écrit avec la police Times New Roman.
+\hspace{1cm}L'intégralité de ce document a été écrit avec la police Times New Roman.\\
 
-Lorsqu'une personne est citée, son nom est écrit en majuscule, et son prénom, seule la première lettre est en majuscule.
+\hspace{0.6cm}Lorsqu'une personne est citée, son nom est écrit en majuscule, et son prénom, seule la première lettre est en majuscule.
 
 \section{Références et remerciements}
-Afin de pouvoir réaliser nos schémas, nous avons utilisé le logiciel$:$ \\
- -balsamiq (création des interfaces étudiant/secrétaire) \\
+\hspace{1cm}Afin de pouvoir réaliser nos schémas, nous avons utilisé le logiciel : 
 
-Notre site internet fait réference :\\
+\hspace{1cm}- balsamiq (création des interfaces étudiant/secrétaire) \\
 
--au CAS de l'Université de Lorraine pour la connection unique et sécurisé de chacun\\
--à la boite mail de Telecom Nancy ( https://webmail.telecomnancy.eu) pour pouvoir échanger directement depuis le site internet.\\
+\hspace{0.6cm}et les sites internet :
+
+\hspace{1cm}- plantuml.com (diagram pattern)
+
+\hspace{1cm}- l'application de Mouchid (Diagrammes UML)\\
+
+\hspace{0.6cm}Notre site internet fait réference :
+
+\hspace{1cm}- au CAS de l'Université de Lorraine pour la connection unique et sécurisé de chacun
+
+\hspace{1cm}- à la boite mail de Telecom Nancy (https://webmail.telecomnancy.eu) pour pouvoir échanger directement depuis le site internet.\\
 	
-	
-		et les sites internet $:$\\
-
--plantuml.com (diagram pattern)\\
--l'application de Mouchid (Diagrammes UML)\\
-
 
 \chapter{DESCRIPTION GLOBALE }
 
 \section{Perspective du produit}
 
-Le site web Gestionnaire de Stages Telecom Nancy a pour but de faciliter le suivi de stage des étudiants de Telecom Nancy. Elle permet dans un premier temps de créer de façon automatique, la fiche  de récapitulatif de stage, et la convention de stage. Pour cela, le site web sera optimisé à la fois pour ordinateur, que pour smartphone ou tablette et permettra des échanges entre les élèves, la secrétaire des stages et les professeurs. L'école, étant rattaché désormais à l'Université de Lorraine, la connection sur la plate-forme se fera grâce au système d'authentification CAS.
+\hspace{1cm}Le site web Gestionnaire de Stages Telecom Nancy a pour but de faciliter le suivi des stages des étudiants de Telecom Nancy.\\
+
+\hspace{0.6cm}Elle permet dans un premier temps de créer de façon automatique, la fiche de renseignements du stage, et la convention de stage. Pour cela, le site web sera optimisé aussi bien pour ordinateur que pour smartphone ou tablette et permettra des échanges entre les élèves, la secrétaire des stages et les professeurs. L'école, étant rattaché désormais à l'Université de Lorraine, la connection sur la plate-forme se fera grâce au système d'authentification CAS.
 
 \section{Fonctionnalités du produit}
 L'application web va permettre aux étudiants de :
 \begin{itemize}[label=\textbullet]
-	\item Création automatique des fiches de renseignement des stages en fonction des donnée entrées par l'étudiant
+	\item Créer automatique des fiches de renseignement des stages en fonction des donnée entrées par l'étudiant
 	\item Créer automatique de la convention de stage
 	\item Communiquer entre élèves et professeurs
 	\item Récupérer le livret de stages
 	\item Récupérer la fiche d'évaluation
-	\item	Récupérer des templates mémoire ingénieur
+	\item Récupérer des templates mémoire ingénieur
 	\item Envoyer sur le serveur la fiche d'évaluation remplie
 	\item Envoyer le rapport de stage/mémoire ingénieur sur le serveur
 	\item Consultater des offres de stages disponibles
 	\item Consultater de la date de soutenance son horaire et sa salle
 \end{itemize}
+
 L'application web va permettre à la secrétaire des stages de :
 \begin{itemize}[label=\textbullet]
 	\item Déposer le livret des stages sur la plateforme
@@ -187,7 +192,9 @@ L'application web va permettre à la secrétaire des stages de :
 	
 
 \section{Utilisateurs}
-Ce site internet sera avant tout utilisé par les étudiants afin de pouvoir préparer leur stage du début de leurs recherche jusqu'à la date de soutenance. Il sera aussi utilisé par la secrétaire des stages qui sera là pour mener à bien la préparation des stages des étudiants. Il sera aussi utilisé par les professeurs afin de connaitre à quels soutenances ils devront être présent, mais ce site sera aussi utilisé par les référents de stages afin de mener à bien la préparation des élèves, et de communiquer avec eux si nécessaire. Dans tous les cas, tout utilisateur va devoir se connecter sur la plateforme grâce au CAS de l'université de Lorraine.
+\hspace{1cm}Ce site internet sera avant tout utilisé par les étudiants afin de pouvoir préparer leur stage du début de leurs recherche jusqu'à la date de la soutenance. Il sera aussi utilisé par la secrétaire des stages qui sera là pour mener à bien la préparation des stages des étudiants. Il sera aussi utilisé par les professeurs afin de connaitre les soutenances auxquelles ils devront prendre part, mais ce site sera aussi utilisé par les référents de stages afin de mener à bien la préparation des élèves, et de communiquer avec eux si nécessaire.\\
+
+\hspace{0.6cm}Dans tous les cas, tout utilisateur va devoir se connecter sur la plateforme grâce au CAS de l'université de Lorraine.
 
 \section{Environnement d'exécution}
 $<$Describe the environment in which the software will operate, including the 
@@ -225,28 +232,28 @@ example, in the vision and scope document or the project plan).$>$
 
 \section{Besoins externes}
 \subsection{Interfaces utilisateur}
-Que ce soit les étudiants, les professeurs, le directeur, la secrétaire des stages, il faut que l'utilisateur puisse se connecter de façon sécurisé. Elle se fait donc par le CAS de l'Université de Lorraine.
+\hspace{1cm}Que ce soit les étudiants, les professeurs, le directeur, la secrétaire des stages, il faut que l'utilisateur puisse se connecter de façon sécurisé. Elle se fait donc par le CAS de l'Université de Lorraine.
 \vspace{0.5cm}
 \begin{center}
 \includegraphics[scale=0.4]{image/CAS.png}
 \end{center}
 \vspace{3cm}
 \begin{flushleft}
-Une fois la connexion établie, l'étudiant peut télécharger les documents dont il a besoin pour son stage avec en vert, les éléments qu'il peut télécharger, et en rouge, ceux qu'il ne peut pas.
+\hspace{1cm}Une fois la connexion établie, l'étudiant peut télécharger les documents dont il a besoin pour son stage avec en vert, les éléments qu'il peut télécharger, et en rouge, ceux qu'il ne peut pas.
 \end{flushleft}
 \begin{center}
 \includegraphics[scale=0.65]{image/DownloadEleve.png}
 \end{center}
 \vspace{8cm}
 \begin{flushleft}
-Il peut aussi trouver les fichiers ou données qu'il doit envoyer sur la plateforme. Avec un vert les fichiers qu'il à déjà envoyés et en rouge, les fichiers non envoyés.
+\hspace{1cm}Il peut aussi trouver les fichiers ou données qu'il doit envoyer sur la plateforme. Avec un vert les fichiers qu'il à déjà envoyés et en rouge, les fichiers non envoyés.
 \end{flushleft}
 \begin{center}
 \includegraphics[scale=0.65]{image/uploadeleve.png}
 \end{center}
 \begin{flushleft}
 \vspace{8cm}
-Pour ce qui concerne l'envoi des informations relatives au stage, l'élève doit envoyer un certain nombre d'informations nécessaires à la génération automatique de la fiche.
+\hspace{1cm}Pour ce qui concerne l'envoi des informations relatives au stage, l'élève doit envoyer un certain nombre d'informations nécessaires à la génération automatique de la fiche.
 \end{flushleft}
 \begin{center}
 \includegraphics[scale=0.65]{image/inforelativesstages.png}
