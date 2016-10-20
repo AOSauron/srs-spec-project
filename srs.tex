@@ -205,30 +205,21 @@ L'application web va permettre à la secrétaire des stages de :
 
 
 \section{Contraintes de conception et d'implémentation}
-$<$Describe any items or issues that will limit the options available to the 
-developers. These might include: corporate or regulatory policies; hardware 
-limitations (timing requirements, memory requirements); interfaces to other 
-applications; specific technologies, tools, and databases to be used; parallel 
-operations; language requirements; communications protocols; security 
-considerations; design conventions or programming standards (for example, if the 
-customerés organization will be responsible for maintaining the delivered 
-software).$>$
+\hspace{1cm}L'application web que nous developpons ici doit être écrite en langages HTML/CSS et PHP ou Javascript. Le langage MySQL sera utilisé pour les bases de données nécessaires au bon fonctionnement de l'application.\\
+
+\hspace{0.6cm}Elle doit pouvoir fonctionner sur différents types de supports et systèmes d'exploitation, et doit notamment s'adapter à la taille de l'écran que l'utilisateur utilise. Elle doit aussi être légère puisque les smartphone ne permettent pas l'utilisation d'application trop demandeuses de ressources.\\
+
+\hspace{0.6cm}L'application doit pouvoir être utilisable et maintenable par le service information de Télécom Nancy sans que cela n'empiète sur leur travail.
+
 
 \section{Manuel utilisateur}
-$<$List the user documentation components (such as user manuals, on-line help, 
-and tutorials) that will be delivered along with the software. Identify any 
-known user documentation delivery formats or standards.$>$
+\hspace{1cm}Un manuel utilisateur est prévu pour que les étudiants et les membres du service scolarité puissent apprendre à utiliser l'application. Il sera par ailleurs possible de contacter le service informatique depuis le site internet pour assistance.
 
 
 \section{Hypothèses et dépendances}
-$<$List any assumed factors (as opposed to known facts) that could affect the 
-requirements stated in the SRS. These could include third-party or commercial 
-components that you plan to use, issues around the development or operating 
-environment, or constraints. The project could be affected if these assumptions 
-are incorrect, are not shared, or change. Also identify any dependencies the 
-project has on external factors, such as software components that you intend to 
-reuse from another project, unless they are already documented elsewhere (for 
-example, in the vision and scope document or the project plan).$>$
+\hspace{1cm}L'application suppose que les personnes amenées à l'utiliser possèdent toutes des identifiants leur permettant de se connecter au CAS de l'UL. On suppose aussi que ces identifiants permettent de différencier les professeurs des étudiants.\\
+
+\hspace{1cm}Par ailleurs, l'application demande un minimum de connaissances en informatique de la part de ses utilisateurs.
 
 
 \chapter{BESOINS SPÉCIFIQUES}
@@ -238,28 +229,28 @@ example, in the vision and scope document or the project plan).$>$
 \hspace{1cm}Que ce soit les étudiants, les professeurs, le directeur, la secrétaire des stages, il faut que l'utilisateur puisse se connecter de façon sécurisé. Elle se fait donc par le CAS de l'Université de Lorraine.
 \vspace{0.5cm}
 \begin{center}
-\includegraphics[scale=0.4]{image/CAS.png}
+\centerline{\includegraphics[scale=0.4]{image/CAS.png}}
 \end{center}
 \vspace{3cm}
 \begin{flushleft}
 \hspace{1cm}Une fois la connexion établie, l'étudiant peut télécharger les documents dont il a besoin pour son stage avec en vert, les éléments qu'il peut télécharger, et en rouge, ceux qu'il ne peut pas.
 \end{flushleft}
 \begin{center}
-\includegraphics[scale=0.65]{image/DownloadEleve.png}
+\centerline{\includegraphics[scale=0.65]{image/DownloadEleve.png}}
 \end{center}
 \vspace{8cm}
 \begin{flushleft}
 \hspace{1cm}Il peut aussi trouver les fichiers ou données qu'il doit envoyer sur la plateforme. Avec un vert les fichiers qu'il à déjà envoyés et en rouge, les fichiers non envoyés.
 \end{flushleft}
 \begin{center}
-\includegraphics[scale=0.65]{image/uploadeleve.png}
+\centerline{\includegraphics[scale=0.65]{image/uploadeleve.png}}
 \end{center}
 \begin{flushleft}
 \vspace{8cm}
 \hspace{1cm}Pour ce qui concerne l'envoi des informations relatives au stage, l'élève doit envoyer un certain nombre d'informations nécessaires à la génération automatique de la fiche.
 \end{flushleft}
 \begin{center}
-\includegraphics[scale=0.65]{image/inforelativesstages.png}
+\centerline{\includegraphics[scale=0.65]{image/inforelativesstages.png}}
 \end{center}
 
 \section{Besoins fonctionnels}
@@ -367,16 +358,7 @@ Voici les besoins fonctionnels qui ne sont pas liés au utilisateurs :
 
 
 \section{Besoins comportementaux}
-$<$Describe the connections between this product and other specific software 
-components (name and version), including databases, operating systems, tools, 
-libraries, and integrated commercial components. Identify the data items or 
-messages coming into the system and going out and describe the purpose of each.  
-Describe the services needed and the nature of communications. Refer to 
-documents that describe detailed application programming interface protocols.  
-Identify data that will be shared across software components. If the data 
-sharing mechanism must be implemented in a specific way (for example, use of a 
-global data area in a multitasking operating system), specify this as an 
-implementation constraint.$>$
+
 \subsection{Diagrammes de séquence des cas d'utilisation}
 %AUTENTIFICATION :
 \begin{center}
@@ -477,26 +459,21 @@ implementation constraint.$>$
 
 
 \chapter{AUTRES BESOINS NON FONCTIONNELS}
-$<$This template illustrates organizing the functional requirements for the 
-product by system features, the major services provided by the product. You may 
-prefer to organize this section by use case, mode of operation, user class, 
-object class, functional hierarchy, or combinations of these, whatever makes the 
-most logical sense for your product.$>$
 
 \section{Besoins liés à la performance}
-$<$Dont really say System Feature 1 State the feature name in just a few 
-words.$>$
+\hspace{1cm}L'application doit pouvoir fonctionner sur des smartphones et des tablettes et est de ce fait limitée au niveau de son utilisation de mémoire vive (qui ne doit pas être supérieure à 500Mo). Elle doit aussi pouvoir charger rapidement : avec une connexion internet classique, les pages internet ne doivent pas prendre plus de 10 secondes pour charger.\\
+
+\hspace{0.6cm}Pendant la période précédant les stages où les élèves doivent pouvoir entrer les informations sur leurs stages, le site ne doit pas rester hors ligne plus d'une heure en cas de problème technique avec le serveur. Au moment du rendu des rapports de stages et pour que les étudiants ne soient pas pénalisés par un facteur qu'ils ne maîtrisent pas, le site ne doit pas rester hors-ligne plus de quelques minutes. Par ailleurs, il doit aussi, à cette période, supporter jusqu'à 200 connexions sumultanées.
 
 \subsection{Besoins liés à la sécurité}
-$<$Provide a short description of the feature and indicate whether it is of 
-High, Medium, or Low priority. You could also include specific priority 
-component ratings, such as benefit, penalty, cost, and risk (each rated on a 
-relative scale from a low of 1 to a high of 9).$>$
+\hspace{1cm}Les informations d'un étudiant doivent être privées et accessibles uniquement par celui-ci et la scolarité. Parallèlement, le rapport de stage d'un étudiant ne doit être visible que par le professeur reponsable qui est chargé de sa correction et la scolarité. Cela est implémentable grâce au passage par le CAS de l'UL (c'est-à-dire l'authentification des utilisateurs).\\
+
+\hspace{0.6cm}Il est par ailleurs souhaitable que les données manipuler par l'application soient chiffrées pour éviter tout problème d'obtention apr une personne non-autorisée.
 
 \subsection{Besoins liés à la qualité du produit }
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
+\hspace{1cm}L'application doit être implémentée de façon à être facilement utilisable et intuitive. L'esthétisme doit aussi être un point important, et l'application doit s'adapter au support de l'utilisateur sans que l'interface devienne inutilisable.\\
+
+\hspace{0.6cm}L'application permet aux utilisateurs d'être aidé par le service informatique en cas et problème et d'avoir accès à un manuel utilisateur décrivant les différentes fonctionnalités de l'application et leur utilisation.
 
 
 
@@ -506,8 +483,9 @@ associated with use cases.$>$
 
 
 
-\
-\section{ANNEXE A: Dictionnaire de données}
+\appendix
+\chapter*{ANNEXE A : Dictionnaire de données}
+\addcontentsline{toc}{chapter}{ANNEXE A : Dictionnaire de données}
 
 \begin{center}
 	\includegraphics[scale=0.45]{image/diagentiassoc.png}
