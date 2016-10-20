@@ -312,12 +312,59 @@ Voici les besoins fonctionnels liés à la \textbf{Secrétaire des stages} :
   \hline
   \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
   \hline
-  En tant que membre du service informatique de l'école, je peux accéder et modifier tous les paramètres de l'application. & Le membre du service informatique peut accéder au code source de l'application et à son hébergeur pour d'éventuelles maintenances.  & Haute\\
+  En tant que secrétaire des stages, je peux mettre en ligne des fichiers dont les élèves ont besoin pour leur stage, pour chaque année. & L'application permet le dépôt de fichiers nécessaires aux élèves dans différentes sections de l'application. & Haute\\
   \hline
-  En tant que membre du service informatique de l'école, je peux répondre aux requêtes (d'aide ou autres) des autres utilisateurs. & Les utilisateurs peuvent échanger des mails grâce au protocole STMP fourni par l'application. & Haute\\ 
+  En tant que secrétaire des stages, je peux accéder aux données mises en ligne par les élèves. & L'application conserve et met à disposition de la secrétaire des stages tous les fichiers et données mis en ligne par les élèves. & Haute\\ 
+  \hline
+  En tant que secrétaire des stages, je peux modifier le statut des élèves. & L'application permet à la secrétaire des stages d'administrer l'année d'appartenance de chaque élève. & Haute\\ 
   \hline
 \end{tabular}
 \end{center}
+
+\vspace{1cm}
+Voici les besoins fonctionnels liés aux \textbf{Professeurs} :
+\begin{center}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  En tant que professeur, je peux avoir accès à toutes les informations concernant les stages des élèves. & L'application fournit aux professeurs toutes les informations relatives aux stages des élèves. & Haute\\
+  \hline
+  En tant que professeur responsable de stages, je peux valider ou non un stage. & L'application permet aux professeurs responsable de stages de valider ou non en ligne les stages qui leur ont été confiés. & Moyenne\\ 
+  \hline
+  En tant que professeur, je peux contacter les élèves dont je corrige leur rapport de stage. & Les professeurs peuvent échanger des mails avec les élèves concernés via le protocole STMP. & Basse\\ 
+  \hline
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+Voici les besoins fonctionnels liés au \textbf{Directeur} :
+\begin{center}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  En tant que directeur, je peux avoir accès à toute l'application sans restriction de droit. & L'application considère le directeur comme un administrateur et lui confère tous les droits. & Haute\\
+  \hline
+  En tant que directeur, je peux valider ou non les stages 3A. & L'application permet au directeur de valider ou non en ligne les stages de 3A & Haute\\ 
+  \hline
+  En tant que directeur, je peux contacter les élèves dont je corrige leur rapport de stage. & Le directeur peut échanger des mails avec les élèves concernés via le protocole STMP. & Basse\\ 
+  \hline
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+Voici les besoins fonctionnels qui ne sont pas liés au utilisateurs :
+\begin{center}
+\begin{tabular}{|p{5cm}|p{7cm}|p{2cm}|}
+  \hline
+  \textbf {Fonction} & \textbf {Description} & \textbf {Priorité} \\
+  \hline
+  L'application vérifie chaque fichier mis en ligne. & Un antivirus intégré vérifiera chaque fichier déposé par les utilisateurs et transmettra un rapport au service informatique dans le cas d'un problème de sécurité ou d'une tentative de piratage. & Haute\\
+  \hline
+\end{tabular}
+\end{center}
+
 
 \section{Besoins comportementaux}
 $<$Describe the connections between this product and other specific software 
