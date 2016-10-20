@@ -414,6 +414,7 @@ associated with use cases.$>$
 
 \begin{center}
 	\includegraphics[scale=0.45]{image/diagentiassoc.png}
+	\vspace {0.5cm}
 	\textbf{Figure 5.1.1.} Diagramme entités-associations
 \end{center}
 
@@ -547,11 +548,67 @@ associated with use cases.$>$
   \hline
   date_naissance & date & date de naissance de la secrétaire &  \\
   \hline
-  adresse_mail & varchar2 & adresse mail de la & clé primaire  \\
+  adresse_mail & varchar2 & adresse mail de la secrétaire & clé primaire  \\
   \hline
   mot_de_passe & varchar2 & mot de passe de la secrétaire &  \\
   \hline
   telephone & varchar2 & numéro de téléphone de la secrétaire &  \\
+  \hline
+\end{tabular}
+
+\vspace {1cm}
+\textbf 
+{Responsable des stages}
+\vspace {0,5cm}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
+  \hline
+  id_responsable & varchar2 & identifiant du responsable des stage UL & clé primaire\\
+  \hline
+  nom & varchar2 & nom du responsable des stages & \\
+  \hline
+  prenom & varchar2 & prénom(s) du responsable des stages &  \\
+  \hline
+  sexe & varchar2 & sexe du responsable des stages &  \\
+  \hline
+  date_naissance & date & date de naissance du responsable des stages &  \\
+  \hline
+  annee_responsable & varchar2 & responsable des stages de l'année (1A,2A,3A) &  \\
+  \hline
+  adresse_mail & varchar2 & adresse mail du responsable des stages & clé primaire  \\
+  \hline
+  mot_de_passe & varchar2 & mot de passe du responsable des stages &  \\
+  \hline
+  telephone & varchar2 & numéro de téléphone du responsable des stages &  \\
+  \hline
+\end{tabular}
+
+\vspace {3cm}
+\textbf 
+{Professeur}
+\vspace {0,5cm}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \textbf {Champ} & \textbf {Type} & \textbf {Description} & \textbf {Commentaires} \\
+  \hline
+  id_professeur & varchar2 & identifiant du professeur UL & clé primaire\\
+  \hline
+  nom & varchar2 & nom du professeur & \\
+  \hline
+  prenom & varchar2 & prénom(s) du professeur &  \\
+  \hline
+  sexe & varchar2 & sexe du professeur &  \\
+  \hline
+  date_naissance & date & date de naissance du professeur &  \\
+  \hline
+  adresse_mail & varchar2 & adresse mail du professeur & clé primaire  \\
+  \hline
+  mot_de_passe & varchar2 & mot de passe du professeur &  \\
+  \hline
+  telephone & varchar2 & numéro de téléphone du professeur &  \\
   \hline
 \end{tabular}
 
